@@ -249,7 +249,7 @@ tr:nth-child(even){
 }
 /* Footer */
 .footer {
-    background-color: #070303;
+    background-color: rgb(37, 40, 42);
     /* background-color: rgb(3,14,15); */
     font-weight: 400;
     padding: 40px 0;
