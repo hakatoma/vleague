@@ -1,0 +1,289 @@
+* {
+    margin:  0 ;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    text-align: center;
+}
+/* Header */
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 9vh;
+    background-color: #60AF39;
+    font-family: sans-serif;
+}
+
+.logo {
+    margin: 0 10px;
+    color: White;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-size: 20px;
+}
+
+.nav-links {
+    display: flex;
+    justify-content: space-around;
+    width: 30%;
+}
+
+.nav-links li {
+    list-style: none;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    letter-spacing: 3px;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.nav-links a:hover {
+    text-decoration: none;
+    color: #fbda61;
+}
+
+.burger {
+    display: block;
+    cursor: pointer;
+}
+
+.burger div {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    margin: 5px;
+    transition: all 0.3s ease;
+}
+
+.instructions {
+    padding: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media screen and (max-width:1024px) {
+    .nav-links {
+        width: 60%;
+    }
+}
+
+@media screen and (max-width:768px) {
+    body {
+        overflow-x: hidden;
+    }
+
+    .nav-links {
+        position: absolute;
+        right: 0px;
+        height: 92vh;
+        top: 8vh;
+        background-color: #60AF39;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 50%;
+        transform: translateX(100%);
+        transition: transform 0.5s ease-in;
+    }
+
+    .nav-links li {
+        opacity: 0;
+    }
+
+    .burger {
+        display: block;
+    }
+}
+
+.nav-active {
+    transform: translateX(0%);
+}
+
+@keyframes navLinkFade {
+    from {
+        opacity: 0;
+        transform: translatex(50px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translatex(0px);
+    }
+}
+
+.toggle .line1 {
+    transform: rotate(-45deg) translate(-5px, 6px);
+}
+
+.toggle .line2 {
+    opacity: 0;
+}
+
+.toggle .line3 {
+    transform: rotate(45deg) translate(-5px, -6px);
+}
+h1 {
+    margin-bottom: 15px;
+}
+.club , .goals{
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 100px;
+}
+.container-wrapper{
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    position: relative;
+    background-image: linear-gradient(to top, #FDFF00, rgb(233, 176, 72));
+    color: rgb(37, 40, 42);
+    background-repeat: no-repeat;
+    background-size: auto 100%;
+    width: 100%;
+}
+
+
+
+.container-wrapper-content{
+    width: 100%;
+    max-width: 1296px;
+    margin: 0px auto;
+    position: relative;
+    text-align: left;
+}
+table{
+    background-color: rgb(37, 65, 80);
+    color: rgb(254, 249, 206);
+    width: 100%; 
+    border-collapse: collapse;
+    border: 1px solid black;
+    
+}
+th, tr {
+    border: 1px solid black;
+    background-color: rgb(37, 65, 80);
+    height: 35px;
+   
+}  
+/* Clubs */
+td.table_col {
+    width: 7.5%;
+}
+tr:nth-child(even){
+    background-color: rgb(3, 14, 15);
+}
+.clb {
+    display: flex;
+    box-sizing: border-box;
+    padding: 8px;
+    text-align: left;
+    width: 100%;
+}
+.clb img {
+    margin-right: 7.5px;
+}
+.clb p {
+    color:rgb(255, 255, 255);
+}
+.name_club {
+    margin-top: 4px;
+}
+#team.clb {
+    color: rgb(254, 249, 206);
+}
+/* Goals */
+.goals {
+    margin-top: 50px;
+}
+.player_scored{
+    text-align: left;
+    width: 100%;
+    color:rgb(255, 255, 255);
+    margin-left: 10px;
+}
+
+.goals_round td:first-child{
+    padding: 10px;
+    width: 30px;
+}
+.goals_round {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
+    width: 100%;
+}
+.player_img {
+    display:flex;
+    width: 50px;
+}
+.player_img img {
+    width: 50px;
+    height: 50px;
+}
+.team_img {
+    width: 100%;
+    height: 100%;
+    display:flex ;
+    align-items: center;
+}
+
+.team-club{
+    display: flex;
+    align-items: center;
+    justify-content: center;  
+    margin-right: 10px;
+}
+
+.team-club > img{
+    margin-right: 4px;
+}
+.goals_round td:last-child {
+    margin-right: 50px;
+    text-align: center;
+}
+/* Footer */
+.footer {
+    background-color: #070303;
+    /* background-color: rgb(3,14,15); */
+    font-weight: 400;
+    padding: 40px 0;
+    margin-top: 100px;
+}
+
+.footer .social {
+    text-align: center;
+    padding-bottom: 25px;
+    color: #4b4c4d;
+}
+
+.footer .social a {
+    font-size: 24px;
+    color: inherit;
+    border: 1px solid #ccc;
+    width: 40px;
+    height: 40px;
+    line-height: 38px;
+    display: inline-block;
+    text-align: center;
+    border-radius: 50%;
+    margin: 0 8px;
+    opacity: 0.75;
+}
+
+.footer .social a:hover {
+    opacity: 0.9;
+    background-color: white;
+}
+
+.footer .copyright {
+    margin-top: 15px;
+    text-align: center;
+    font-size: 13px;
+    color: #aaa;
+}

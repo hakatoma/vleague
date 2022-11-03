@@ -1,0 +1,255 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');
+*{
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizelegibility;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    text-size-adjust: 100%;
+}
+
+.app{
+    width: 100%;
+    position: relative;
+}
+
+
+
+.container-link{
+    text-decoration: none;
+    color: #000;
+}
+
+.container-link:hover{
+    text-decoration: underline;
+}
+
+.container-img{
+    width: 100%;
+}
+
+.text-desciption{
+    margin-top: 10px;
+    width: 100%;
+    font-size: 20px;
+    white-space: 1px;
+    letter-spacing: 0.5px;
+    word-wrap: break-word;
+    white-space: normal;
+    overflow: hidden;
+    display: block;
+    display: -webkit-box;
+    text-overflow: ellipsis;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    text-align: justify;
+}
+
+.share{
+    margin-top: 20px;
+    float: left;
+    display: inline-flex;
+    -webkit-box-align: center;
+    align-items: center;
+    font-size: 14px;
+    line-height: 1;
+    color: rgb(37, 40, 42);
+    padding: 0px;
+}
+
+.share:hover .container-social{
+    display: block;
+    cursor: pointer;
+}
+
+.share > span {
+    margin-right: 8px;
+    font-weight: 500;
+    font-size: 16px;
+}
+
+.share > i{
+    font-size: 16px;
+}
+
+/* container body */
+
+.body{
+    padding: 0px 0 100px 0;
+    width: 100%;
+}
+
+.container-wrapper{
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    position: relative;
+    background-image: linear-gradient(to top, #FDFF00, rgb(233, 176, 72));
+    color: rgb(37, 40, 42);
+    background-repeat: no-repeat;
+    /* background-image: url(https://assets.laliga.com/assets/public/beats/vertical.svg); */
+    background-size: auto 100%;
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+
+
+.container-wrapper-content{
+    width: 100%;
+    max-width: 1296px;
+    margin: 0px auto;
+    position: relative;
+}
+
+.container-icon{
+    position: relative;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    margin-left: 5px;
+    font-size: 16px;
+}
+
+.container-icon-main{
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+}
+
+
+/* footer */
+
+.footer-social__icon{
+    background-color: #d41819;
+}
+
+.container-social__icon-list{
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    list-style: none;
+    padding-left: 180px;
+
+}
+
+.container-social__icon-list-item{
+    line-height: 50px;
+    height: 50px;
+    margin-right: 20px;
+    text-align: center;
+}
+
+.container-social__icon-link{
+    font-size: 24px;
+    text-decoration: none;
+    color: #fff;
+}
+
+.footer-menu{
+    width: 100%;
+    background-color: #212d44;
+    height: 35px;
+}
+
+.footer-menu-list{
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-left: 185px;
+
+}
+
+.footer-menu-item{
+    list-style: none;
+    margin-right: 30px;
+    line-height: 35px;
+}
+
+.footer-menu-item > a{
+    text-decoration: none;
+    color: #ccc;
+}
+
+.footer-info{
+    width: 100%;
+    padding: 30px;
+    background: #151d2d;
+}
+
+.footer-container-info{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.footer-infor-row{
+    display: flex;
+    flex-direction: column;
+    height: 300px;
+
+}
+
+.footer-info-block{
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    color: white;
+}
+
+.footer-info-block > i{
+    margin-right: 6px;
+    font-size: 20px;
+}
+.footer-info-link{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-info-link > a{
+    padding-top: 15px;
+    text-decoration: none;
+    margin-right: 6px;
+    text-align: center;
+}
+
+/* form login */
+
+.modal {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    display: flex;
+    animation: fadeIn linear 0.2s;
+  }
+  
+.modal__overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+  }
+  
+.modal__body {
+    --growth-from: 0.7;
+    --growth-to: 1;
+    margin: auto;
+    position: relative;
+    z-index: 1;
+    animation: growth linear 0.1s;
+  }
